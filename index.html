@@ -15,6 +15,8 @@
     <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
     <div class="row">
         <div class="col-lg-6">
+            <button type="button" class="btn btn-info" onclick="setData(0, 'Movie')">Movies</button>
+            <button type="button" class="btn btn-info" onclick="setData(1, 'TV Show')">TV Shows</button>
             <div id="graph1"></div>
             <div id="graph2"></div><br/>
         </div>
@@ -22,6 +24,21 @@
             <div id="graph3"></div>
         </div>
     </div>
+    <h4>Written Questions:</h4>
+        <pre><p>1. Describe how your dashboard answers the questions presented:</p> My first graph gives top 10 genres by number of titles in that genre. Viewers are able to toggle between TV Shows or Movies. Because there are many different genres and a visualization displaying all of them would not be easy to ready, I set a threshold so that only the 10 genres with the most titles would be shown.
+ My second graph displays the average duration in minutes for reccent movies. Once again, my graph would have been too cluttered if I had shown every year in the dataset, so I decided to only display information for reccent years which I define as 1980 and later.
+ My third graph shows the top (most common) director and actor pairs for movies released in the United States. When processing the dataset, I noticed that there were some cases of movies that had been released in multiple languages and thus the director and actor pairs had a high number of movies created together. In order to address this, I filtered the data to only show movies released in the United States which got rid of those cases.
+
+ <p>2. List 3 reasons why D3 was helpful and improved your visualization:</p> D3 is very customizable which was helpful in displaying my visualiation. There were many tools to alter the type of data I was passing and parse through that data. The accessibility of tutorials was also very helpful and made teaching myself D3 easier. Another aspect of D3 that improved my visualization is the aesthetically inclined design of it. I have previously worked with matplotlib in python and the syntax is much more confusing in my opinion. I also think the graphs are less customizable and visually appealing.
+
+ <p>3. List 3 reasons why D3 would not be the best tool for creating a visualization</p> D3 is very complicated. Because it is so customizable, there are lots of different ways to make graphs and other visualizations which was overwhelming and confusing at first as a beginner. D3 also requires a strong working knoweledge of JavaScript, HTML, and CSS which were all new to me and made this assignment very time consuming and difficult. Thus, D3 is not the best tool for beginers creating visualizations. Another issue with D3 is the change in syntax and functions between version 3, version 4, and version 5. This was a problem for me when trying to follow guides or even the D3 website and the tutorials used functions that were no longer available in the version I was using. Finally, because D3 has so many options, data scientists might get too excited about making pretty visualization and forget about making useful ones. Sometime the most complex and "impressive" visualizations aren't that viewer friendly and don't convey information well.
+</pre>
+<h4>Accessible Data Visualization:</h4>
+<pre><p> 4. Evaluate the accessibility of your dashboard based on the readings in the “Before you begin” section. What kinds of users might find this dashboard accessible and who might have more difficulty? What additional actions might you take to make this dashboard more accessible to all audiences?</p> Based on the readings in the "Before you begin" section, I was really conscious of my color choices and tried to use larger fonts. I originally chose a green color scheme, but as the "A Comprehensive Guide to Accessible Data Visualization" article explained, most forms of colorblindness involve green. Thus I chose purples and blues so that my dashboard would be more accessible for colorblind users. I also used larger font sizes, bold text, and thick bar graphs for people with low vision. To improve the accessibility as well, I chose bar graphs which are easier to interpret, separated the boxes with whitespace, andnprovided counts when possible for asssistive technologies to read. That being said, as the second article noted, hover overlays are not compatible with assistive technologies and thus this feature of my dashboard is not very accessible. Also, people with light sensitivity or Achromatopsia might find the colors of the visualization challenging to distinguish.   
+
+ <p>5. Reflect on the stages of your design and implementation process when you could have taken steps to make your dashboard more accessible to all audiences. What are some factors that kept you from taking these steps?</p> In the formatting of my graphs, I could have added a caption or textbox describing the visualization that an AT would be able to read. The main factor that kept me from doing this is not understanding enough HTML and JavaScript to be able to format these textboxes in a way such that they wouldn't take away from the flow of the dashboard and wouldn't overlap. The prompting questions were also very open ended which would make it hard to provide a consise description/main takeaway of each visualizatiion. I also could have embded tables or csv files with the underlying data for user to access, but again I don't know how to do this in HTML or JavaScript.
+
+</pre>
     <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
 </body>

@@ -10,3 +10,41 @@
 }
 
 /* Include any custom CSS styling here! */
+.btn {
+    position: relative;
+    left: 60px;
+    background-color: white; 
+    border: 3px solid rgb(101, 108, 194);
+    color: black;
+    padding: 10px 16px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.2s;
+}
+.btn:hover {
+    background-color:white;
+    color: rgb(101, 108, 194);
+}
+.svg {
+    display: block;
+    margin: 0 auto;
+    font: 10px sans-serif;
+}
+
+
+.tooltip {
+    position: absolute;
+    font-size: 12px;
+    min-width: 100px;
+    padding: 10px;
+    width:  auto;
+    height: auto;
+    pointer-events: none;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
